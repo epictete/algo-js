@@ -1,6 +1,6 @@
 // Creating the Rectangle class
 class Rectangle {
-    constructor (topLeftXPos, topLeftYPos, width, length) {
+    constructor(topLeftXPos, topLeftYPos, width, length) {
         this.topLeftXPos = topLeftXPos;
         this.topLeftYPos = topLeftYPos;
         this.width = width;
@@ -17,14 +17,14 @@ class Rectangle {
     }
 }
 
-// Function that generates random coordinates for the rectangles
-function randPos () {
-    return Math.floor(Math.random()*1000)+1;
+// Function that generates random coordinates for the rectangles with a max of 1000
+function randPos() {
+    return Math.floor(Math.random() * 1000) + 1;
 }
 
-// Function taht generates random sizes for the rectangles
-function randSize () {
-    return Math.floor(Math.random()*10)+1;
+// Function taht generates random sizes for the rectangles with a max of 10
+function randSize() {
+    return Math.floor(Math.random() * 10) + 1;
 }
 
 // Loop that generates 1000 rectangles
