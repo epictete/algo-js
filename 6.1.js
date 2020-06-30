@@ -1,11 +1,3 @@
-// Import readlineSync
-const readlineSync = require("readline-sync");
-
-// Get the circle's data
-// let x = new Number(readlineSync.question("What's the circle's x position ? "));
-// let y = new Number(readlineSync.question("What's the circle's y position ? "));
-// let radius = new Number(readlineSync.question("What's the circle's radius ? "));
-
 // Creating the Circle class
 class Circle {
     constructor(xPos, yPos, radius) {
