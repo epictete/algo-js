@@ -15,7 +15,7 @@ let actors = [];
 let i = 1;
 
 // Function that creates an array with the data collected above
-function askTvSerie () {
+function askTvSerie() {
     while (i <= totalActors) {
         actors.push(readlineSync.question('Please enter actor number ' + i + ' : '));
         i++;
@@ -32,11 +32,14 @@ function askTvSerie () {
 askTvSerie();
 
 // Function that will take as argument the data structure defined above and return a list of the same cast but in a random order
-for (let i = actors.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * i);
-    let temp = actors[i];
-    actors[i] = actors[j];
-    actors[j] = temp;
+function newCast() {
+    for (let i = actors.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * i);
+        let temp = actors[i];
+        actors[i] = actors[j];
+        actors[j] = temp;
+    }
 }
+newCast();
 console.log('The new cast of my next serie will be : ');
 console.log(actors);

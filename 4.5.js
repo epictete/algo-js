@@ -14,8 +14,8 @@ let by = new Number(readlineSync.question('Please enter the y coordinate for poi
 console.log('Point B is : (' + bx + ', ' + by + ')');
 
 // Calculate the distace between the 2 points in a 2D space (x, y)
-let x = bx - ax;
-let y = by - ay;
+let dx = bx - ax;
+let dy = by - ay;
 
 // The core of the function
 function calcDistance(a, b) {

@@ -5,12 +5,15 @@ const readlineSync = require("readline-sync");
 let n = new Number(readlineSync.question('Please enter a number to generate a Fibonacci serie : '));
 
 // Function that generates a Fibonacci serie up to number n
-let current = 1, prev = 0, temp, fibo = [];
-while (n > 0) {
-    fibo.push(current);
-    temp = current;
-    current = current + prev;
-    prev = temp;
-    n--;
+function fibo() {
+    let current = 1, prev = 0, temp, serie = [];
+    while (n > 0) {
+        serie.push(current);
+        temp = current;
+        current = current + prev;
+        prev = temp;
+        n--;
+    }
+    console.log(serie);
 }
-console.log(fibo);
+fibo();
